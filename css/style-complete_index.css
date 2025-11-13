@@ -29,3 +29,33 @@
     height: 100%;
     object-fit: cover;
 }
+.home-highlight__actions {
+    margin-top: 1.75rem;
+}
+
+.home-partners__header {
+    margin-bottom: 2.5rem;
+    text-align: left;
+}
+
+.partner-rail img {
+    width: 100%;
+    max-width: 160px;
+    margin: 0 auto;
+    filter: grayscale(25%);
+    transition: filter 0.3s ease;
+}
+
+.partner-rail img:hover {
+    filter: none;
+}
+
+@media (max-width: 768px) {
+    .home-partners__header {
+        text-align: center;
+    }
+
+    .page-home .card img {
+        margin-bottom: 1rem;
+    }
+}
