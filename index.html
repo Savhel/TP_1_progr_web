@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BioPanier | Fruits et légumes biologiques livrés frais</title>
+    <meta name="description" content="BioPanier propose des paniers de fruits et légumes biologiques, cueillis à maturité et livrés sous 24 heures dans tout le Cameroun.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-complete_index.css">
+</head>
+<body class="page-home">
+<div class="top-bar" role="presentation">
+    <div class="container top-bar__inner">
+        <div class="top-bar__group">
+            <span aria-hidden="true">📞</span>
+            <span>+237 673 962 337</span>
+        </div>
+        <div class="top-bar__group">
+            <span aria-hidden="true">✉️</span>
+            <a href="mailto:hello@BioPanier.cm">hello@BioPanier.cm</a>
+        </div>
+        <div class="top-bar__group">
+            <span aria-hidden="true">🚚</span>
+            <span>Livraison express &amp; retours offerts</span>
+        </div>
+    </div>
+</div>
+
+<input type="checkbox" id="nav-toggle" class="nav-checkbox">
+
+<header class="site-header">
+    <div class="container site-header__inner">
+        <a class="site-brand" href="index.html">BioPanier</a>
+
+        <label for="nav-toggle" class="nav-toggle">
+            <span class="sr-only">Basculer la navigation</span>
+            <span class="nav-toggle__line"></span>
+        </label>
+
+        <nav class="site-nav" id="site-nav" >
+            <ul class="site-nav__list">
+                <li><a class="site-nav__link" href="index.html" aria-current="page">Accueil</a></li>
+                <li><a class="site-nav__link" href="shop.html">Boutique</a></li>
+                <li><a class="site-nav__link" href="about.html">À propos</a></li>
+                <li><a class="site-nav__link" href="blog.html">Blog</a></li>
+                <li><a class="site-nav__link" href="contact.html">Contact</a></li>
+            </ul>
+            <a class="site-nav__cta" href="cart.html">
+                Panier
+                <span class="site-nav__badge" aria-label="0 articles dans le panier" >0</span>
+            </a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero hero--home">
+        <img class="hero__background" src="images/bg_1.jpg" alt="">
+        <div class="container">
+            <div class="hero__content" >
+                <span class="hero__eyebrow">Agriculture régénérative</span>
+                <h1 class="hero__title">Des fruits et légumes bio, récoltés le matin et livrés le soir.</h1>
+                <p class="hero__lead">
+                    Nous collaborons avec plus de 35 fermes partenaires autour de Yaoundé pour offrir une alimentation saine,
+                    locale et respectueuse de la planète.
+                </p>
+                <div class="hero__actions">
+                    <a class="btn btn--primary" href="shop.html">Découvrir la boutique</a>
+                    <a class="btn btn--ghost" href="about.html">Visiter nos fermes</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--tight" >
+        <div class="container">
+            <header class="section__header">
+                <span class="section__eyebrow">Nos engagements</span>
+                <h2 class="section__title">Une expérience ultra-fraîche pensée pour les amoureux de bio responsables</h2>
+                <p class="section__subtitle">
+                    Du champ à votre table, nous maîtrisons chaque étape de la chaîne du froid pour préserver la qualité
+                    nutritive et gustatif de chaque produit.
+                </p>
+            </header>
+            <div class="card-grid">
+                <article class="card">
+                    <span class="card__icon" aria-hidden="true">🚜</span>
+                    <h3 class="card__title">Cueilli sur commande</h3>
+                    <p class="card__body">Vos paniers sont récoltés à l'aube pour garantir un maximum de fraîcheur et de vitamines.</p>
+                </article>
+                <article class="card">
+                    <span class="card__icon" aria-hidden="true">🧊</span>
+                    <h3 class="card__title">Chaîne du froid contrôlée</h3>
+                    <p class="card__body">Nos véhicules isothermes maintiennent 4&nbsp;°C durant toute la livraison.</p>
+                </article>
+                <article class="card">
+                    <span class="card__icon" aria-hidden="true">🥗</span>
+                    <h3 class="card__title">Menus inspirants</h3>
+                    <p class="card__body">Recevez chaque semaine une fiche recette équilibrée élaborée par notre cheffe Megane.</p>
+                </article>
+                <article class="card">
+                    <span class="card__icon" aria-hidden="true">♻️</span>
+                    <h3 class="card__title">Impact mesuré</h3>
+                    <p class="card__body">Nous réutilisons 92&nbsp;% de nos emballages et compensons chaque livraison à 200&nbsp;%.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--tight" >
+        <div class="container">
+            <header class="section__header">
+                <span class="section__eyebrow">Explorez nos familles</span>
+                <h2 class="section__title">Des produits pour chaque moment de la journée</h2>
+            </header>
+            <div class="category-grid">
+                <article class="category-card">
+                    <img class="category-card__img" src="images/category-1.jpg" alt="Fruits colorés disposés sur une table">
+                    <div class="category-card__content">
+                        <h3 class="category-card__title">Fruits vitaminés</h3>
+                        <p>Kiwi, ananas, papaye, mangue&nbsp;: faites le plein d'énergie dès le matin.</p>
+                        <a class="pill" href="shop.html">Voir la sélection</a>
+                    </div>
+                </article>
+                <article class="category-card">
+                    <img class="category-card__img" src="images/category-2.jpg" alt="Légumes verts">
+                    <div class="category-card__content">
+                        <h3 class="category-card__title">Légumes de saison</h3>
+                        <p>Des récoltes tournantes pour cuisiner selon le cycle des saisons.</p>
+                        <a class="pill" href="shop.html">Composer un panier</a>
+                    </div>
+                </article>
+                <article class="category-card">
+                    <img class="category-card__img" src="images/category-3.jpg" alt="Bouteilles de jus naturel">
+                    <div class="category-card__content">
+                        <h3 class="category-card__title">Jus pressés</h3>
+                        <p>Des jus cold-press sans sucres ajoutés, parfaits pour la pause detox.</p>
+                        <a class="pill" href="shop.html">Commander mes jus</a>
+                    </div>
+                </article>
+                <article class="category-card">
+                    <img class="category-card__img" src="images/category-4.jpg" alt="Fruits et légumes séchés">
+                    <div class="category-card__content">
+                        <h3 class="category-card__title">Sélection gourmande</h3>
+                        <p>Fruits séchés, chips de plantain, confitures artisanales et condiments.</p>
+                        <a class="pill" href="shop.html">Faire le plein</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--tight" >
+        <div class="container">
+            <div class="layout-panel">
+                <div class="stat-grid">
+                    <div class="stat-card">
+                        <p class="stat-card__value">35</p>
+                        <p class="stat-card__label">Producteurs partenaires</p>
+                    </div>
+                    <div class="stat-card">
+                        <p class="stat-card__value">24 h</p>
+                        <p class="stat-card__label">Du champ à votre assiette</p>
+                    </div>
+                    <div class="stat-card">
+                        <p class="stat-card__value">12&nbsp;000</p>
+                        <p class="stat-card__label">Familles livrées en 2023</p>
+                    </div>
+                    <div class="stat-card">
+                        <p class="stat-card__value">92&nbsp;%</p>
+                        <p class="stat-card__label">Clients satisfaits</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" >
+        <div class="container">
+            <header class="section__header">
+                <span class="section__eyebrow">Produits en vedette</span>
+                <h2 class="section__title">Nos best-sellers de la semaine</h2>
+                <p class="section__subtitle">Disponibles en quantité limitée. Tous les prix incluent la livraison dans Yaoundé et Douala.</p>
+            </header>
+            <div class="product-grid">
+                <article class="product-card">
+                    <div class="product-card__image">
+                        <img src="images/product-1.jpg" alt="Panier de poivrons rouges et verts">
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-card__category">Panier découverte</span>
+                        <h3 class="product-card__title"><a href="product-single.html">Panier vitaminé 8kg</a></h3>
+                        <p>Un assortiment de fruits exotiques à partager en famille.</p>
+                        <p class="product-card__price">12 500 FCFA</p>
+                        <div class="product-card__actions">
+                            <button class="btn btn--primary" type="button">Ajouter</button>
+                            <a class="btn btn--outline" href="product-single.html">Voir détails</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-card__image">
+                        <img src="images/product-5.jpg" alt="Salade verte avec tomates cerises">
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-card__category">Box hebdo</span>
+                        <h3 class="product-card__title"><a href="product-single.html">Box famille veggie</a></h3>
+                        <p>14 variétés de légumes bio pour 5 repas complets.</p>
+                        <p class="product-card__price">15&nbsp;900&nbsp;FCFA</p>
+                        <div class="product-card__actions">
+                            <button class="btn btn--primary" type="button" >Ajouter</button>
+                            <a class="btn btn--outline" href="product-single.html">Voir détails</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" >
+                    <div class="product-card__image">
+                        <img src="images/product-3.jpg" alt="Haricots verts frais">
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-card__category">Primeur</span>
+                        <h3 class="product-card__title"><a href="product-single.html">Haricots verts croquants</a></h3>
+                        <p>Récoltés à Obala, conditionnés sous 2 heures.</p>
+                        <p class="product-card__price">2&nbsp;400&nbsp;FCFA / kg</p>
+                        <div class="product-card__actions">
+                            <button class="btn btn--primary" type="button" >Ajouter</button>
+                            <a class="btn btn--outline" href="product-single.html">Voir détails</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card" >
+                    <div class="product-card__image">
+                        <img src="images/product-8.jpg" alt="Bouteilles de jus">
+                    </div>
+                    <div class="product-card__body">
+                        <span class="product-card__category">Atelier jus</span>
+                        <h3 class="product-card__title"><a href="product-single.html">Pack detox 3 jours</a></h3>
+                        <p>Six jus pressés à froid et deux shots booster au gingembre.</p>
+                        <p class="product-card__price">17&nbsp;500&nbsp;FCFA</p>
+                        <div class="product-card__actions">
+                            <button class="btn btn--primary" type="button" >Ajouter</button>
+                            <a class="btn btn--outline" href="product-single.html">Voir détails</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--tight" >
+        <div class="container">
+            <div class="layout-split">
+                <div class="layout-panel">
+                    <span class="badge badge--accent">Pourquoi BioPanier&nbsp;?</span>
+                    <h2 class="section__title">Une coopérative digitale qui valorise les petits producteurs</h2>
+                    <p>Notre équipe accompagne les agriculteurs dans la transition agroécologique et garantit un revenu juste grâce à des contrats pluriannuels.</p>
+                    <ul class="list list--checks">
+                        <li><span aria-hidden="true">✓</span> Certification en cours avec Ecocert et ACT All Africa.</li>
+                        <li><span aria-hidden="true">✓</span> Audit qualité hebdomadaire sur la maturité, la texture et le goût.</li>
+                        <li><span aria-hidden="true">✓</span> Programme anti-gaspillage avec revente aux cantines partenaires.</li>
+                    </ul>
+                    <div class="hero__actions home-highlight__actions">
+                        <a class="btn btn--primary" href="about.html">Rencontrer les producteurs</a>
+                    </div>
+                </div>
+                <div class="layout-panel layout-panel--media">
+                    <img src="images/about.jpg" alt="Producteurs BioPanier récoltant des légumes">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--tight" >
+        <div class="container">
+            <header class="section__header">
+                <span class="section__eyebrow">Nouveautés du blog</span>
+                <h2 class="section__title">Conseils nutrition et recettes de saison</h2>
+            </header>
+            <div class="card-grid">
+                <article class="card">
+                    <img src="images/image_1.jpg" alt="Bol de smoothies colorés">
+                    <h3 class="card__title"><a href="blog-single.html">Smoothies verts&nbsp;: 3 recettes prêtes en 5 minutes</a></h3>
+                    <p class="card__body">Notre cheffe vous partage ses combinaisons préférées pour booster votre énergie sans sucre ajouté.</p>
+                    <a class="pill" href="blog-single.html">Lire l'article</a>
+                </article>
+                <article class="card">
+                    <img src="images/image_3.jpg" alt="Assiette de légumes grillés">
+                    <h3 class="card__title"><a href="blog-single.html">Cuisiner les légumes oubliés du terroir camerounais</a></h3>
+                    <p class="card__body">Djéka, morelle noire, macabo&nbsp;: on vous guide pour les sublimer dans des plats modernes.</p>
+                    <a class="pill" href="blog-single.html">Lire l'article</a>
+                </article>
+                <article class="card">
+                    <img src="images/image_2.jpg" alt="Fermier dans son champ">
+                    <h3 class="card__title"><a href="blog-single.html">Comment nous réduisons de 47&nbsp;% l'empreinte carbone</a></h3>
+                    <p class="card__body">Process logistique, emballages réutilisables, sensibilisation clients&nbsp;: découvrez nos actions concrètes.</p>
+                    <a class="pill" href="blog-single.html">Lire l'article</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--tight">
+        <div class="container">
+            <header class="section__header">
+                <span class="section__eyebrow">Ils nous font confiance</span>
+                <h2 class="section__title">Ce que disent nos clients</h2>
+            </header>
+            <div class="testimonial-grid">
+                <article class="testimonial-card">
+                    <p class="testimonial-card__quote">«&nbsp;Les paniers BioPanier ont transformé notre cantine d'entreprise. Les salariés adorent la diversité et on réduit nos déchets alimentaires.&nbsp;»</p>
+                    <p class="testimonial-card__author">Clarisse, Responsable RSE chez Nexttel</p>
+                </article>
+                <article class="testimonial-card">
+                    <p class="testimonial-card__quote">«&nbsp;Je suis impressionnée par la fraîcheur des produits. Même mes enfants redemandent des légumes verts&nbsp;!&nbsp;»</p>
+                    <p class="testimonial-card__author">Awa, maman de trois enfants</p>
+                </article>
+                <article class="testimonial-card">
+                    <p class="testimonial-card__quote">«&nbsp;Le pack detox m'aide à relancer mon énergie après mes séances intensives. Livraison ponctuelle et service client impeccable.&nbsp;»</p>
+                    <p class="testimonial-card__author">Loïc, coach sportif</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--tight">
+        <div class="container">
+            <div class="layout-panel">
+                <header class="section__header home-partners__header">
+                    <span class="section__eyebrow">Ils cuisinent avec nous</span>
+                    <h2 class="section__title">Chefs, hôtels et traiteurs partenaires</h2>
+                    <p class="section__subtitle">Des professionnels de la gastronomie qui comptent sur BioPanier pour une qualité constante.</p>
+                </header>
+                <div class="partner-rail">
+                    <img src="images/partner-1.png" alt="Restaurant Le Safoutier">
+                    <img src="images/partner-2.png" alt="Traiteur Green Table">
+                    <img src="images/partner-3.png" alt="Chef Academy">
+                    <img src="images/partner-4.png" alt="Hôtel Mont Febe">
+                    <img src="images/partner-5.png" alt="Collectif Bio Cameroun">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" >
+        <div class="container">
+            <div class="newsletter-card">
+                <div>
+                    <h2 class="newsletter-card__title">Recevez chaque jeudi nos suggestions de menus et promos privées</h2>
+                    <p>Un email par semaine, pas de spam. Bonus&nbsp;: un ebook de 10 recettes végétales signé par la cheffe Megane.</p>
+                </div>
+                <form class="newsletter-card__form" action="#" method="post">
+                    <label class="sr-only" for="newsletter-email">Adresse e-mail</label>
+                    <div class="input-group">
+                        <input id="newsletter-email" type="email" name="email" placeholder="votrenom@email.com" required>
+                    </div>
+                    <button class="btn btn--primary" type="submit">Je m'inscris</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="site-footer__grid">
+            <div class="site-footer__brand">
+                <h3>BioPanier</h3>
+                <p>La plateforme qui relie directement les fermes bio camerounaises aux foyers et restaurants engagés.</p>
+                <div class="tag-list">
+                    <span class="tag">Logistique verte</span>
+                    <span class="tag">Paiement sécurisé</span>
+                </div>
+            </div>
+            <div class="site-footer__nav">
+                <h4>Explorer</h4>
+                <ul>
+                    <li><a href="shop.html">Boutique</a></li>
+                    <li><a href="about.html">Notre démarche</a></li>
+                    <li><a href="blog.html">Blog &amp; recettes</a></li>
+                    <li><a href="contact.html">Nous contacter</a></li>
+                </ul>
+            </div>
+            <div class="site-footer__nav">
+                <h4>Besoin d'aide&nbsp;?</h4>
+                <ul>
+                    <li><a href="checkout.html">FAQ livraison</a></li>
+                    <li><a href="cart.html">Suivre ma commande</a></li>
+                    <li><a href="contact.html">Devenir partenaire</a></li>
+                    <li><a href="about.html">Rejoindre l'équipe</a></li>
+                </ul>
+            </div>
+            <div class="site-footer__nav">
+                <h4>Contact</h4>
+                <ul>
+                    <li>+237 673 962 337</li>
+                    <li><a href="mailto:hello@BioPanier.cm">hello@BioPanier.cm</a></li>
+                    <li>Carrefour Bastos, Yaoundé</li>
+                    <li>Lun - Sam&nbsp;: 7h - 20h</li>
+                </ul>
+            </div>
+        </div>
+        <div class="site-footer__meta">
+            <span>© BioPanier 2025. Tous droits réservés.</span>
+            <span>Conditions générales &nbsp;|&nbsp; Politique de confidentialité</span>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
