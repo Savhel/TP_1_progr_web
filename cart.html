@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Votre panier | BioPanier</title>
+    <meta name="description" content="Consultez le contenu de votre panier BioPanier : ajustez les quantités, ajoutez un code promo et passez à la commande.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-complete_cart.css">
+</head>
+<body class="page-cart">
+    <div class="top-bar" role="presentation">
+        <div class="container top-bar__inner">
+            <div class="top-bar__group">
+                <span aria-hidden="true">🛒</span>
+                <span>Livraison offerte dès 40&nbsp;000&nbsp;FCFA</span>
+            </div>
+            <div class="top-bar__group">
+                <span aria-hidden="true">⚡️</span>
+                <span>Préparation prioritaire en 90 minutes</span>
+            </div>
+            <div class="top-bar__group">
+                <span aria-hidden="true">🎁</span>
+                <span>Code promo «&nbsp;BIENVENUE&nbsp;» · -10&nbsp;%</span>
+            </div>
+        </div>
+    </div>
+
+    <input type="checkbox" id="nav-toggle" class="nav-checkbox">
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <a class="site-brand" href="index.html">BioPanier</a>
+            <label for="nav-toggle" class="nav-toggle">
+                <span class="sr-only">Basculer la navigation</span>
+                <span class="nav-toggle__line"></span>
+            </label>
+            <nav class="site-nav" id="site-nav" >
+                <ul class="site-nav__list">
+                    <li><a class="site-nav__link" href="index.html">Accueil</a></li>
+                    <li><a class="site-nav__link" href="shop.html">Boutique</a></li>
+                    <li><a class="site-nav__link" href="about.html">À propos</a></li>
+                    <li><a class="site-nav__link" href="blog.html">Blog</a></li>
+                </ul>
+                <a class="site-nav__cta" href="cart.html" aria-current="page">
+                    Panier
+                    <span class="site-nav__badge" aria-label="3 articles dans le panier" >0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section section--tight" >
+            <div class="container">
+                <header class="section__header">
+                    <span class="section__eyebrow">Votre sélection</span>
+                    <h1 class="section__title">Préparez votre commande</h1>
+                    <p class="section__subtitle">Vous pouvez ajuster les quantités, ajouter des notes ou sauvegarder des produits pour plus tard.</p>
+                </header>
+                <div class="cart-layout">
+                    <div class="cart-table-wrapper">
+                        <table class="table" aria-describedby="cart-table-caption">
+                            <caption id="cart-table-caption" class="sr-only">Détail des articles du panier</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Produit</th>
+                                    <th scope="col">Prix unitaire</th>
+                                    <th scope="col">Quantité</th>
+                                    <th scope="col">Total</th>
+                                    <th scope="col"><span class="sr-only">Actions</span></th>
+                                </tr>
+                            </thead>
+                            <tbody >
+                                <tr -row>
+                                    <td colspan="5">
+                                        <div class="cart-empty" >
+                                            <h2>Votre panier est vide</h2>
+                                            <p>Ajoutez vos fruits et légumes biologiques préférés pour commencer votre commande.</p>
+                                            <a class="btn btn--primary" href="shop.html">Découvrir la boutique</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="cart-message"  hidden>
+                            <span aria-hidden="true">🌱</span>
+                            <p>Astuce anti-gaspi&nbsp;: retrouvez des produits déclassés à -30&nbsp;% dans la rubrique «&nbsp;Épicerie&nbsp;».</p>
+                        </div>
+                    </div>
+                    <aside class="summary-card cart-summary" aria-label="Résumé du panier">
+                        <h2>Résumé</h2>
+                        <div class="summary-card__row">
+                            <span>Sous-total</span>
+                            <span >0&nbsp;FCFA</span>
+                        </div>
+                        <div class="summary-card__row">
+                            <span>Frais de livraison</span>
+                            <span >0&nbsp;FCFA</span>
+                        </div>
+                        <div class="summary-card__row">
+                            <span>Code promo</span>
+                            <button class="link-apply" type="button" >Ajouter un code</button>
+                        </div>
+                        <div class="summary-card__row" -row hidden>
+                            <span>Remise</span>
+                            <span >-0&nbsp;FCFA</span>
+                        </div>
+                        <div class="summary-card__row summary-card__row--total">
+                            <span>Total TTC</span>
+                            <span >0&nbsp;FCFA</span>
+                        </div>
+                        <div class="summary-promo"  hidden>
+                            <label class="form-label" for="cart-promo-code">Code promotionnel</label>
+                            <div class="input-group">
+                                <input id="cart-promo-code" type="text" placeholder="Saisir votre code" >
+                            </div>
+                            <button class="btn btn--outline" type="button" >Appliquer</button>
+                            <p class="summary-note" ></p>
+                        </div>
+                        <button class="btn btn--primary" type="button" >Passer au paiement</button>
+                        <p class="summary-note" >Paiement sécurisé · Orange Money, MTN, cartes Visa/Mastercard</p>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--tight" >
+            <div class="container">
+                <div class="layout-panel">
+                    <header class="section__header">
+                        <span class="section__eyebrow">Suggestion</span>
+                        <h2 class="section__title">Complétez votre panier</h2>
+                    </header>
+                    <div class="product-grid">
+                        <article class="product-card" >
+                            <div class="product-card__image">
+                                <img src="images/product-11.jpg" alt="Jus Green Glow">
+                            </div>
+                            <div class="product-card__body">
+                                <span class="product-card__category">Jus pressés</span>
+                                <h3 class="product-card__title"><a href="product-single.html">Jus Green Glow</a></h3>
+                                <p>Concombre, pomme, persil et citron · 250 ml.</p>
+                                <p class="product-card__price">2&nbsp;200&nbsp;FCFA</p>
+                                <div class="product-card__actions">
+                                    <button class="btn btn--primary" type="button" >Ajouter</button>
+                                    <a class="btn btn--outline" href="product-single.html">Comparer</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product-card" >
+                            <div class="product-card__image">
+                                <img src="images/product-12.jpg" alt="Pack smoothies">
+                            </div>
+                            <div class="product-card__body">
+                                <span class="product-card__category">Smoothies</span>
+                                <h3 class="product-card__title"><a href="product-single.html">Pack smoothies énergie</a></h3>
+                                <p>6 bouteilles · Boost gingembre, tropical, cacao.</p>
+                                <p class="product-card__price">12&nbsp;000&nbsp;FCFA</p>
+                                <div class="product-card__actions">
+                                    <button class="btn btn--primary" type="button" >Ajouter</button>
+                                    <a class="btn btn--outline" href="product-single.html">Comparer</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product-card" >
+                            <div class="product-card__image">
+                                <img src="images/product-5.jpg" alt="Mix crudités">
+                            </div>
+                            <div class="product-card__body">
+                                <span class="product-card__category">Légumes prêts</span>
+                                <h3 class="product-card__title"><a href="product-single.html">Mix crudités 1,5kg</a></h3>
+                                <p>Idéal pour compléter vos repas de la semaine.</p>
+                                <p class="product-card__price">4&nbsp;500&nbsp;FCFA</p>
+                                <div class="product-card__actions">
+                                    <button class="btn btn--primary" type="button" >Ajouter</button>
+                                    <a class="btn btn--outline" href="product-single.html">Comparer</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="site-footer__grid">
+                <div class="site-footer__brand">
+                    <h3>BioPanier</h3>
+                    <p>La plateforme qui relie directement les fermes bio camerounaises aux foyers et restaurants engagés.</p>
+                    <div class="tag-list">
+                        <span class="tag">Logistique verte</span>
+                        <span class="tag">Paiement sécurisé</span>
+                    </div>
+                </div>
+                <div class="site-footer__nav">
+                    <h4>Explorer</h4>
+                    <ul>window.addEventListener('load', () => {
+        refreshCartUI();
+    });
+                        <li><a href="shop.html">Boutique</a></li>
+                        <li><a href="about.html">Notre démarche</a></li>
+                        <li><a href="blog.html">Blog &amp; recettes</a></li>
+                        <li><a href="contact.html">Nous contacter</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer__nav">
+                    <h4>Besoin d'aide&nbsp;?</h4>
+                    <ul>
+                        <li><a href="checkout.html">FAQ livraison</a></li>
+                        <li><a href="cart.html">Suivre ma commande</a></li>
+                        <li><a href="contact.html">Devenir partenaire</a></li>
+                        <li><a href="about.html">Rejoindre l'équipe</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer__nav">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>+237 673 962 337</li>
+                        <li><a href="mailto:hello@BioPanier.cm">hello@BioPanier.cm</a></li>
+                        <li>Carrefour Bastos, Yaoundé</li>
+                        <li>Lun - Sam&nbsp;: 7h - 20h</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="site-footer__meta">
+                <span>© BioPanier 2025. Tous droits réservés.</span>
+                <span>Conditions générales &nbsp;|&nbsp; Politique de confidentialité</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
