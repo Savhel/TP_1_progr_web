@@ -1,0 +1,51 @@
+.page-about main {
+    background: linear-gradient(180deg, #f0f5ec 0%, #ffffff 65%, #f4f7f2 100%);
+}
+
+.page-about .hero__actions {
+    margin-top: 2rem;
+}
+
+.layout-panel--accent {
+    background: radial-gradient(circle at top left, rgba(130, 174, 70, 0.1), rgba(12, 26, 18, 0.02));
+    border: 1px solid rgba(12, 26, 18, 0.05);
+}
+
+.impact-cards {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+.impact-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: var(--radius-sm);
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    display: grid;
+    gap: 0.5rem;
+}
+
+.impact-card h3 {
+    margin: 0;
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    color: var(--color-primary);
+}
+
+.impact-card p {
+    margin: 0;
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+}
+
+.page-about .layout-panel > .list {
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .impact-cards {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+}
