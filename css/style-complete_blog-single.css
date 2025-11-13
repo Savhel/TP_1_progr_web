@@ -1,0 +1,137 @@
+.page-blog-single main {
+    background: linear-gradient(180deg, #f3f6f1 0%, #ffffff 55%, #f4f7f2 100%);
+}
+
+.article-layout {
+    display: grid;
+    gap: clamp(2rem, 4vw, 3rem);
+    grid-template-columns: minmax(0, 1fr) 320px;
+}
+
+.article__header {
+    display: grid;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.article__header h1 {
+    margin: 0;
+    font-size: clamp(2.2rem, 4vw, 2.8rem);
+    font-family: var(--font-heading);
+}
+
+.article__meta {
+    display: inline-flex;
+    align-items: center;
+    gap: 1.2rem;
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+}
+
+.article img {
+    border-radius: var(--radius-sm);
+    margin: 1.5rem 0;
+    box-shadow: var(--shadow-sm);
+}
+
+.article ul {
+    margin: 1rem 0 1.5rem 1.25rem;
+    color: var(--color-text);
+}
+
+.article__cta {
+    background: rgba(130, 174, 70, 0.12);
+    border-radius: var(--radius-sm);
+    padding: 1.75rem;
+    margin: 2rem 0;
+    display: grid;
+    gap: 0.75rem;
+}
+
+.article__footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    border-top: 1px solid rgba(12, 26, 18, 0.08);
+    padding-top: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+.article__author {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.article__author img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    box-shadow: none;
+    margin: 0;
+}
+
+.article__share {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.95rem;
+}
+
+.article__share a {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.article-sidebar {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.sidebar-section {
+    background: var(--color-surface);
+    border-radius: var(--radius-sm);
+    padding: 1.75rem;
+    box-shadow: var(--shadow-sm);
+    display: grid;
+    gap: 1rem;
+}
+
+.sidebar-section h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-family: var(--font-heading);
+}
+
+.related-articles article {
+    display: grid;
+    gap: 0.25rem;
+}
+
+.related-articles span {
+    color: var(--color-text-muted);
+    font-size: 0.85rem;
+}
+
+.podcast-card {
+    background: rgba(12, 26, 18, 0.05);
+    border-radius: var(--radius-sm);
+    padding: 1.5rem;
+    display: grid;
+    gap: 0.75rem;
+}
+
+.sidebar-newsletter {
+    background: linear-gradient(135deg, rgba(130, 174, 70, 0.14), rgba(65, 111, 27, 0.08));
+}
+
+@media (max-width: 960px) {
+    .article-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .article-sidebar {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+}
