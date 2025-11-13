@@ -1,0 +1,142 @@
+.page-product main {
+    background: linear-gradient(180deg, #f7faf4 0%, #ffffff 55%, #f2f6ef 100%);
+}
+
+.product-detail {
+    display: grid;
+    gap: clamp(2rem, 4vw, 3rem);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    align-items: start;
+}
+
+.product-gallery {
+    background: var(--color-surface);
+    border-radius: var(--radius-sm);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-sm);
+    display: grid;
+    gap: 1rem;
+}
+
+.product-gallery__thumbnails {
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+}
+
+.product-gallery__thumbnails img {
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.2s ease, transform 0.2s ease;
+}
+
+.product-gallery__thumbnails img:hover {
+    border-color: var(--color-primary);
+    transform: translateY(-2px);
+}
+
+.product-info h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4vw, 2.6rem);
+    margin: 0.75rem 0;
+}
+
+.product-info__intro {
+    font-size: 1.05rem;
+    color: var(--color-text);
+    margin-bottom: 1.5rem;
+}
+
+.composition {
+    margin-top: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: var(--radius-sm);
+    padding: 1.75rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.composition h2 {
+    margin-top: 0;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+}
+
+.nutrition-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    margin-top: 1.5rem;
+}
+
+.nutrition-card {
+    background: rgba(12, 26, 18, 0.05);
+    border-radius: var(--radius-sm);
+    padding: 1.5rem;
+    display: grid;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.nutrition-card h3 {
+    margin: 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.nutrition-card p {
+    margin: 0;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--color-primary);
+}
+
+.nutrition-card span {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+}
+
+.care-panel {
+    background: var(--color-surface);
+    border-radius: var(--radius-sm);
+    padding: 1.75rem;
+    box-shadow: var(--shadow-sm);
+    display: grid;
+    gap: 1rem;
+}
+
+.care-panel h3 {
+    margin: 0;
+    font-family: var(--font-heading);
+}
+
+.review-card {
+    background: var(--color-surface);
+    border-radius: var(--radius-sm);
+    padding: 1.75rem;
+    box-shadow: var(--shadow-sm);
+    display: grid;
+    gap: 0.75rem;
+}
+
+.review-card__meta {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    color: var(--color-text-muted);
+    font-weight: 600;
+}
+
+.review-card__body {
+    margin: 0;
+    color: var(--color-text);
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .product-gallery {
+        padding: 1rem;
+    }
+}
