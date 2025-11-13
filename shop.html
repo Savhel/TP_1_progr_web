@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Boutique BioPanier | Fruits, légumes et paniers bio</title>
+    <meta name="description" content="Parcourez la boutique BioPanier : paniers hebdomadaires, fruits, légumes, jus pressés et produits du terroir, livrés sous 24 heures.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-complete_shop.css">
+</head>
+<body class="page-shop">
+    <div class="top-bar" role="presentation">
+        <div class="container top-bar__inner">
+            <div class="top-bar__group">
+                <span aria-hidden="true">🚚</span>
+                <span>Livraison express Yaoundé &amp; Douala</span>
+            </div>
+            <div class="top-bar__group">
+                <span aria-hidden="true">💳</span>
+                <span>Paiement sécurisé (Orange Money, MTN, carte)</span>
+            </div>
+            <div class="top-bar__group">
+                <span aria-hidden="true">🔁</span>
+                <span>Retours gratuits sous 48h</span>
+            </div>
+        </div>
+    </div>
+
+    <input type="checkbox" id="nav-toggle" class="nav-checkbox">
+
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <a class="site-brand" href="index.html">BioPanier</a>
+            <label for="nav-toggle" class="nav-toggle">
+                <span class="sr-only">Basculer la navigation</span>
+                <span class="nav-toggle__line"></span>
+            </label>
+
+            <nav class="site-nav" id="site-nav" >
+                <ul class="site-nav__list">
+                    <li><a class="site-nav__link" href="index.html">Accueil</a></li>
+                    <li><a class="site-nav__link" href="shop.html" aria-current="page">Boutique</a></li>
+                    <li><a class="site-nav__link" href="about.html">À propos</a></li>
+                    <li><a class="site-nav__link" href="blog.html">Blog</a></li>
+                    <li><a class="site-nav__link" href="contact.html">Contact</a></li>
+                </ul>
+                <a class="site-nav__cta" href="cart.html">
+                    Panier
+                    <span class="site-nav__badge" aria-label="0 articles dans le panier" >0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero hero--sub">
+            <img class="hero__background" src="images/bg_1.jpg" alt="">
+            <div class="container">
+                <div class="hero__content" >
+                    <span class="hero__eyebrow">Boutique en ligne</span>
+                    <h1 class="hero__title">Sélectionnez vos produits de saison en quelques clics</h1>
+                    <p class="hero__lead">
+                        Des paniers hebdomadaires personnalisables, des fruits et légumes à l'unité, des jus pressés
+                        et des pépites du terroir camerounais.
+                    </p>
+                    <div class="hero__actions">
+                        <a class="btn btn--primary" href="#catalogue">Voir les nouveautés</a>
+                        <a class="btn btn--ghost" href="product-single.html">Exemple de fiche produit</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--tight" >
+            <div class="container">
+                <div class="filter-bar" role="search">
+                    <div class="filter-bar__controls">
+                        <label class="sr-only" for="category-filter">Filtrer par catégorie</label>
+                        <select class="form-select" id="category-filter" name="category">
+                            <option value="all">Toutes les catégories</option>
+                            <option value="panier">Paniers hebdo</option>
+                            <option value="fruits">Fruits</option>
+                            <option value="legumes">Légumes</option>
+                            <option value="jus">Jus &amp; boissons</option>
+                            <option value="epicerie">Épicerie fine</option>
+                        </select>
+                    </div>
+                    <div class="filter-bar__controls">
+                        <label class="sr-only" for="sort-filter">Trier par</label>
+                        <select class="form-select" id="sort-filter" name="sort">
+                            <option value="popular">Populaires</option>
+                            <option value="new">Nouveautés</option>
+                            <option value="price-asc">Prix croissant</option>
+                            <option value="price-desc">Prix décroissant</option>
+                        </select>
+                    </div>
+                    <div class="filter-bar__actions">
+                        <button class="btn btn--outline" type="button">Réinitialiser</button>
+                        <button class="btn btn--primary" type="button">Appliquer</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="catalogue" >
+            <div class="container">
+                <header class="section__header">
+                    <span class="section__eyebrow">Catalogue</span>
+                    <h2 class="section__title">Nos meilleures ventes de la semaine</h2>
+                    <p class="section__subtitle">Profitez d'une remise de 10&nbsp;% à partir de 25&nbsp;000&nbsp;FCFA et de la livraison offerte dès 40&nbsp;000&nbsp;FCFA.</p>
+                </header>
+                <div class="product-grid">
+                    <article class="product-card" >
+                        <div class="product-card__image">
+                            <img src="images/product-6.jpg" alt="Panier de tomates cerises">
+                        </div>
+                        <div class="product-card__body">
+                            <span class="product-card__category">Paniers hebdo</span>
+                            <h3 class="product-card__title"><a href="product-single.html">Panier Essentiel 6kg</a></h3>
+                            <p>Mix de 5 fruits et 8 légumes de saison pour 3 repas équilibrés.</p>
+                            <p class="product-card__price">10&nbsp;900&nbsp;FCFA</p>
+                            <div class="product-card__actions">
+                                <button class="btn btn--primary" type="button" >Ajouter</button>
+                                <a class="btn btn--outline" href="product-single.html">Détails</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="product-card" >
+                        <div class="product-card__image">
+                            <img src="images/product-2.jpg" alt="Fraises fraîches">
+                        </div>
+                        <div class="product-card__body">
+                            <span class="product-card__category">Fruits</span>
+                            <h3 class="product-card__title"><a href="product-single.html">Fraises de Bafoussam</a></h3>
+                            <p>Récoltées à la main, en barquette de 500 g, sans traitement.</p>
+                            <p class="product-card__price">3&nbsp;800&nbsp;FCFA</p>
+                            <div class="product-card__actions">
+                                <button class="btn btn--primary" type="button" >Ajouter</button>
+                                <a class="btn btn--outline" href="product-single.html">Détails</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="product-card" >
+                        <div class="product-card__image">
+                            <img src="images/product-7.jpg" alt="Pommes vertes">
+                        </div>
+                        <div class="product-card__body">
+                            <span class="product-card__category">Fruits</span>
+                            <h3 class="product-card__title"><a href="product-single.html">Carottes Granny Bio</a></h3>
+                            <p>Croquantes et acidulées, cultivées sur la ferme d'Obala.</p>
+                            <p class="product-card__price">2&nbsp;900&nbsp;FCFA / kg</p>
+                            <div class="product-card__actions">
+                                <button class="btn btn--primary" type="button" >Ajouter</button>
+                                <a class="btn btn--outline" href="product-single.html">Détails</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="product-card" >
+                        <div class="product-card__image">
+                            <img src="images/category-3.jpg" alt="Jus vert en bouteille">
+                        </div>
+                        <div class="product-card__body">
+                            <span class="product-card__category">Jus pressés</span>
+                            <h3 class="product-card__title"><a href="product-single.html">Jus Green Glow</a></h3>
+                            <p>Concombre, pomme, persil, citron vert. Pression à froid quotidienne.</p>
+                            <p class="product-card__price">2&nbsp;200&nbsp;FCFA</p>
+                            <div class="product-card__actions">
+                                <button class="btn btn--primary" type="button" >Ajouter</button>
+                                <a class="btn btn--outline" href="product-single.html">Détails</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="product-card" >
+                        <div class="product-card__image">
+                            <img src="images/product-5.jpg" alt="Salade de crudités">
+                        </div>
+                        <div class="product-card__body">
+                            <span class="product-card__category">Légumes</span>
+                            <h3 class="product-card__title"><a href="product-single.html">Mix crudités 1,5kg</a></h3>
+                            <p>Carotte, concombre, betterave, laitue croquante. Prêt à cuisiner.</p>
+                            <p class="product-card__price">4&nbsp;500&nbsp;FCFA</p>
+                            <div class="product-card__actions">
+                                <button class="btn btn--primary" type="button" >Ajouter</button>
+                                <a class="btn btn--outline" href="product-single.html">Détails</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="product-card" >
+                        <div class="product-card__image">
+                            <img src="images/product-4.jpg" alt="Chou rouge">
+                        </div>
+                        <div class="product-card__body">
+                            <span class="product-card__category">Légumes</span>
+                            <h3 class="product-card__title"><a href="product-single.html">Chou rouge tendre</a></h3>
+                            <p>Texture croquante. Idéal pour salades et pickles maison.</p>
+                            <p class="product-card__price">1&nbsp;800&nbsp;FCFA / kg</p>
+                            <div class="product-card__actions">
+                                <button class="btn btn--primary" type="button" >Ajouter</button>
+                                <a class="btn btn--outline" href="product-single.html">Détails</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="product-card" >
+                        <div class="product-card__image">
+                            <img src="images/category-4.jpg" alt="Fruits secs">
+                        </div>
+                        <div class="product-card__body">
+                            <span class="product-card__category">Épicerie fine</span>
+                            <h3 class="product-card__title"><a href="product-single.html">Mix snacks énergétiques</a></h3>
+                            <p>Noix de cajou grillées, ananas séché, chips de plantain.</p>
+                            <p class="product-card__price">5&nbsp;200&nbsp;FCFA</p>
+                            <div class="product-card__actions">
+                                <button class="btn btn--primary" type="button" >Ajouter</button>
+                                <a class="btn btn--outline" href="product-single.html">Détails</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="product-card" >
+                        <div class="product-card__image">
+                            <img src="images/category-3.jpg" alt="Pack de smoothies">
+                        </div>
+                        <div class="product-card__body">
+                            <span class="product-card__category">Jus pressés</span>
+                            <h3 class="product-card__title"><a href="product-single.html">Pack Découverte Smoothies</a></h3>
+                            <p>6 recettes signature · riche en fibres et sans sucres ajoutés.</p>
+                            <p class="product-card__price">12&nbsp;000&nbsp;FCFA</p>
+                            <div class="product-card__actions">
+                                <button class="btn btn--primary" type="button" >Ajouter</button>
+                                <a class="btn btn--outline" href="product-single.html">Détails</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <nav class="pagination" aria-label="Pagination boutique">
+                    <a class="pagination__control is-disabled" href="#" aria-disabled="true">Précédent</a>
+                    <a class="pagination__page is-active" href="#">1</a>
+                    <a class="pagination__page" href="#">2</a>
+                    <a class="pagination__page" href="#">3</a>
+                    <a class="pagination__control" href="#">Suivant</a>
+                </nav>
+            </div>
+        </section>
+
+        <section class="section section--tight" >
+            <div class="container">
+                <div class="layout-panel">
+                    <div class="layout-split">
+                        <div>
+                            <span class="badge badge--accent">Abonnements</span>
+                            <h2 class="section__title">Passez en abonnement flexible</h2>
+                            <p>Recevez votre panier chaque semaine avec la possibilité de mettre en pause ou de modifier les contenus jusqu'à 12 h la veille.</p>
+                            <ul class="list list--checks">
+                                <li><span aria-hidden="true">✓</span> Remise supplémentaire de 8&nbsp;%.</li>
+                                <li><span aria-hidden="true">✓</span> Livraison prioritaire dès 7 h.</li>
+                                <li><span aria-hidden="true">✓</span> Accès exclusif aux nouveautés.</li>
+                            </ul>
+                        </div>
+                        <div class="subscription-panel">
+                            <p class="subscription-panel__title">Choisissez votre rythme</p>
+                            <ul class="subscription-panel__list">
+                                <li>
+                                    <span>Hebdomadaire</span>
+                                    <strong>-8&nbsp;%</strong>
+                                </li>
+                                <li>
+                                    <span>Bi-mensuel</span>
+                                    <strong>-5&nbsp;%</strong>
+                                </li>
+                                <li>
+                                    <span>Mensuel</span>
+                                    <strong>-3&nbsp;%</strong>
+                                </li>
+                            </ul>
+                            <a class="btn btn--primary" href="checkout.html">Activer mon abonnement</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="site-footer__grid">
+                <div class="site-footer__brand">
+                    <h3>BioPanier</h3>
+                    <p>La plateforme qui relie directement les fermes bio camerounaises aux foyers et restaurants engagés.</p>
+                    <div class="tag-list">
+                        <span class="tag">Logistique verte</span>
+                        <span class="tag">Paiement sécurisé</span>
+                    </div>
+                </div>
+                <div class="site-footer__nav">
+                    <h4>Explorer</h4>
+                    <ul>
+                        <li><a href="shop.html">Boutique</a></li>
+                        <li><a href="about.html">Notre démarche</a></li>
+                        <li><a href="blog.html">Blog &amp; recettes</a></li>
+                        <li><a href="contact.html">Nous contacter</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer__nav">
+                    <h4>Besoin d'aide&nbsp;?</h4>
+                    <ul>
+                        <li><a href="checkout.html">FAQ livraison</a></li>
+                        <li><a href="cart.html">Suivre ma commande</a></li>
+                        <li><a href="contact.html">Devenir partenaire</a></li>
+                        <li><a href="about.html">Rejoindre l'équipe</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer__nav">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>+237 673 962 337</li>
+                        <li><a href="mailto:hello@BioPanier.cm">hello@BioPanier.cm</a></li>
+                        <li>Carrefour Bastos, Yaoundé</li>
+                        <li>Lun - Sam&nbsp;: 7h - 20h</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="site-footer__meta">
+                <span>© BioPanier 2025. Tous droits réservés.</span>
+                <span>Conditions générales &nbsp;|&nbsp; Politique de confidentialité</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

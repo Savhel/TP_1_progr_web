@@ -1,0 +1,103 @@
+.page-shop main {
+    background: linear-gradient(180deg, #f4f7f2 0%, #ffffff 60%, #f4f7f2 100%);
+}
+
+.page-shop .hero__actions {
+    margin-top: 1.75rem;
+}
+
+.filter-bar__controls {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.pagination {
+    display: inline-flex;
+    gap: 0.65rem;
+    margin: 3rem auto 0 auto;
+    align-items: center;
+}
+
+.pagination__page,
+.pagination__control {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 42px;
+    padding: 0.65rem 1.05rem;
+    border-radius: 999px;
+    border: 1px solid rgba(12, 26, 18, 0.12);
+    font-weight: 500;
+    color: var(--color-text-muted);
+    transition: background 0.2s ease, color 0.2s ease, border 0.2s ease;
+}
+
+.pagination__page:hover,
+.pagination__control:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.pagination__page.is-active {
+    background: var(--color-primary);
+    color: #f5ffe7;
+    border-color: var(--color-primary);
+}
+
+.pagination__control.is-disabled {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.subscription-panel {
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: var(--radius-sm);
+    padding: 2rem;
+    box-shadow: var(--shadow-sm);
+    display: grid;
+    gap: 1.25rem;
+}
+
+.subscription-panel__title {
+    margin: 0;
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    color: var(--color-dark);
+}
+
+.subscription-panel__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.85rem;
+}
+
+.subscription-panel__list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(130, 174, 70, 0.08);
+    padding: 0.85rem 1rem;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+}
+
+.subscription-panel__list strong {
+    color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+    .filter-bar {
+        gap: 1rem;
+    }
+
+    .filter-bar__controls {
+        width: 100%;
+    }
+
+    .pagination {
+        flex-wrap: wrap;
+    }
+}
