@@ -82,11 +82,25 @@ Il s’adapte aux différentes tailles d'écran.
 
 ---
 
-## 🧑‍💻 Auteur
+## 🧑‍💻 Auteurs
 
-- **Nom :** *Five T & Cie (Groupe d'Élèves ingénieurs)*  
-- **Filière :** Génie Informatique (ENSPY)  
-- **Année :** 2025–2026  
+Projet réalisé par le groupe **Five T & Cie** :
+
+| Nom & Prénom | GitHub |
+|--------------|--------|
+| Tsafack Fotso Savio Jorlyn        | [savhel](https://github.com/savhel) |
+| Balock Mayega        | [mayega-git](https://github.com/mayega-git) |
+| Kengfack Tsafack Bernice        | [LagrangeKengfack](https://github.com/LagrangeKengfack) |
+| Tchoutzine Tchetnkou Balbino        | [zoom-BT](https://github.com/zoom-BT) |
+| Tchoyi Abraham Wilson        | [wilbed237](https://github.com/wilbed237) |
+| Toulepi Foudjo Jordan        | [TF-Jordan](https://github.com/TF-Jordan) |
+| Tsaffo Tagouffo Mégane        | [ROSMA-ROSMA](https://github.com/ROSMA-ROSMA) |
+| Tsakem Djoukamg Irving        | [Jourfroy](https://github.com/Jourfroy) |
+| Yamenjeu Tchaweu Charline        | [Charlinebrenda](https://github.com/Charlinebrenda) |
+
+**Filière :** Génie Informatique (ENSPY)  
+**Année :** 2025–2026
+
 
 ---
 

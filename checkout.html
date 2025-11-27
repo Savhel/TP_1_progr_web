@@ -30,14 +30,15 @@
         </div>
     </div>
 
+    <input type="checkbox" id="nav-toggle" class="nav-checkbox">
     <header class="site-header">
         <div class="container site-header__inner">
             <a class="site-brand" href="index.html">BioPanier</a>
-            <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">
+            <label for="nav-toggle" class="nav-toggle">
                 <span class="sr-only">Basculer la navigation</span>
                 <span class="nav-toggle__line"></span>
-            </button>
-            <nav class="site-nav" id="site-nav" data-nav>
+            </label>
+            <nav class="site-nav" id="site-nav" >
                 <ul class="site-nav__list">
                     <li><a class="site-nav__link" href="index.html">Accueil</a></li>
                     <li><a class="site-nav__link" href="shop.html">Boutique</a></li>
@@ -47,14 +48,14 @@
                 </ul>
                 <a class="site-nav__cta" href="cart.html">
                     Panier
-                    <span class="site-nav__badge" aria-label="Revenir au panier" data-cart-count>0</span>
+                    <span class="site-nav__badge" aria-label="Revenir au panier" >0</span>
                 </a>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="section section--tight" data-reveal>
+        <section class="section section--tight" >
             <div class="container">
                 <header class="section__header">
                     <span class="section__eyebrow">Étape finale</span>
@@ -62,9 +63,8 @@
                     <p class="section__subtitle">Renseignez vos informations, choisissez un créneau et confirmez votre paiement sécurisé.</p>
                 </header>
                 <div class="checkout-layout">
-                    <form class="checkout-form" action="#" method="post" data-checkout-form>
-                        <p class="form-feedback" data-checkout-feedback></p>
-                        <section class="checkout-section" data-reveal>
+                    <form class="checkout-form" action="#" method="post" >
+                        <section class="checkout-section" >
                             <h2>Coordonnées</h2>
                             <div class="form-grid form-grid--cols-2">
                                 <div>
@@ -86,7 +86,7 @@
                             </div>
                         </section>
 
-                        <section class="checkout-section" data-reveal>
+                        <section class="checkout-section" >
                             <h2>Adresse de livraison</h2>
                             <div class="form-grid form-grid--cols-2">
                                 <div class="form-grid__full">
@@ -113,7 +113,7 @@
                             </div>
                         </section>
 
-                        <section class="checkout-section" data-reveal>
+                        <section class="checkout-section" >
                             <h2>Créneau de livraison</h2>
                             <div class="slot-grid">
                                 <label class="slot-card">
@@ -140,18 +140,18 @@
                             </div>
                         </section>
 
-                        <section class="checkout-section" data-reveal>
+                        <section class="checkout-section" >
                             <h2>Paiement</h2>
                             <div class="payment-options">
                                 <label class="payment-card">
-                                    <input type="radio" name="payment" value="orange-money" required>
+                                    <input type="radio" name="payment" value="orange" required>
                                     <span>
                                         <strong>Orange Money</strong>
                                         <small>Confirmation immédiate</small>
                                     </span>
                                 </label>
                                 <label class="payment-card">
-                                    <input type="radio" name="payment" value="mtn-mobile-money">
+                                    <input type="radio" name="payment" value="mtn">
                                     <span>
                                         <strong>MTN Mobile Money</strong>
                                         <small>Code sécurisé envoyé par SMS</small>
@@ -181,7 +181,7 @@
                             </div>
                         </section>
 
-                        <section class="checkout-section" data-reveal>
+                        <section class="checkout-section" >
                             <label class="tos-check">
                                 <input type="checkbox" name="terms" required>
                                 <span>Je confirme avoir vérifié ma commande et accepte les <a href="#">conditions générales</a>.</span>
@@ -190,34 +190,34 @@
                             <p class="checkout-guarantee">Paiement 100&nbsp;% sécurisé · Livraison garantie le jour même</p>
                         </section>
                     </form>
-                    <div class="checkout-success" data-checkout-success hidden>
+                    <div class="checkout-success"  hidden>
                         <h2>Merci pour votre commande&nbsp;!</h2>
-                        <p data-checkout-success-text>Nous préparons vos paniers avec soin.</p>
+                        <p -text>Nous préparons vos paniers avec soin.</p>
                         <a class="btn btn--primary" href="shop.html">Continuer vos achats</a>
                     </div>
 
-                    <aside class="summary-card checkout-summary" aria-label="Récapitulatif de commande" data-checkout-summary>
+                    <aside class="summary-card checkout-summary" aria-label="Récapitulatif de commande" >
                         <h2>Votre commande</h2>
-                        <ul class="order-items" data-checkout-items></ul>
-                        <div class="checkout-empty" data-checkout-empty hidden>
+                        <ul class="order-items" ></ul>
+                        <div class="checkout-empty"  hidden>
                             <p>Votre panier est vide. Ajoutez des produits avant de valider votre commande.</p>
                             <a class="btn btn--outline" href="shop.html">Explorer la boutique</a>
                         </div>
                         <div class="summary-card__row">
                             <span>Sous-total</span>
-                            <span data-checkout-subtotal>0&nbsp;FCFA</span>
+                            <span >0&nbsp;FCFA</span>
                         </div>
                         <div class="summary-card__row">
                             <span>Livraison</span>
-                            <span data-checkout-delivery>Offerte</span>
+                            <span >Offerte</span>
                         </div>
-                        <div class="summary-card__row" data-checkout-discount-row hidden>
+                        <div class="summary-card__row"  hidden>
                             <span>Remise</span>
-                            <span data-checkout-discount>-0&nbsp;FCFA</span>
+                            <span >-0&nbsp;FCFA</span>
                         </div>
                         <div class="summary-card__row summary-card__row--total">
                             <span>Total TTC</span>
-                            <span data-checkout-total>0&nbsp;FCFA</span>
+                            <span >0&nbsp;FCFA</span>
                         </div>
                         <div class="summary-badges">
                             <span class="tag">Impact carbone compensé</span>
@@ -240,7 +240,10 @@
                 <div class="site-footer__brand">
                     <h3>BioPanier</h3>
                     <p>La plateforme qui relie directement les fermes bio camerounaises aux foyers et restaurants engagés.</p>
-
+                    <div class="tag-list">
+                        <span class="tag">Logistique verte</span>
+                        <span class="tag">Paiement sécurisé</span>
+                    </div>
                 </div>
                 <div class="site-footer__nav">
                     <h4>Explorer</h4>
@@ -263,7 +266,7 @@
                 <div class="site-footer__nav">
                     <h4>Contact</h4>
                     <ul>
-                        <li>+237 673 96 23 37</li>
+                        <li>+237 673 962 337</li>
                         <li><a href="mailto:hello@BioPanier.cm">hello@BioPanier.cm</a></li>
                         <li>Carrefour Bastos, Yaoundé</li>
                         <li>Lun - Sam&nbsp;: 7h - 20h</li>
@@ -277,6 +280,5 @@
         </div>
     </footer>
 
-    <script src="js/main.js" defer></script>
 </body>
 </html>

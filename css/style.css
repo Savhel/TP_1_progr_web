@@ -373,7 +373,7 @@ body.has-nav-open {
 
 .hero__lead {
     font-size: 1.1rem;
-    color: rgba(19, 122, 15, 0.85);
+    color: rgba(0, 0, 0, 0.85);
     margin-bottom: 2.2rem;
 }
 
